@@ -36,6 +36,14 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/films").hasAuthority("SCOPE_ADMIN")
+                        .requestMatchers(org.springframework.http.HttpMethod.DELETE, "/api/films").hasAuthority("SCOPE_ADMIN")
+=======
+>>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
+=======
+>>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
                         .anyRequest().authenticated()
                 ).cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
