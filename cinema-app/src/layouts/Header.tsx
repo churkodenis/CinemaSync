@@ -10,13 +10,6 @@ const authRoutes = ["/login", "/register"];
 export default function Header() {
   const location = useLocation();
   const { user } = useUserDetailsSelector();
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const isAdmin = (user as any)?.user?.roles?.includes("ADMIN");
-=======
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
 
   if (authRoutes.includes(location.pathname)) {
     return null;
@@ -61,20 +54,6 @@ export default function Header() {
             >
               Мої квитки
             </Link>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            {isAdmin && (
-              <Link
-                to="/admin"
-                className="text-sm font-medium text-red-500 hover:text-red-700 transition-colors"
-              >
-                Адмін
-              </Link>
-            )}
-=======
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
           </nav>
 
           <div className="h-8 w-[1px] bg-border hidden sm:block" />

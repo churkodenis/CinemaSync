@@ -7,15 +7,6 @@ import RegisterPage from "@/pages/register/RegisterPage";
 import { createBrowserRouter, RouteObject } from "react-router-dom";
 import PosterPage from "@/pages/film/PosterPage";
 import Tickets from "@/pages/film/Tickets";
-<<<<<<< HEAD
-<<<<<<< HEAD
-import AdminPage from "@/pages/admin/AdminPage";
-import ChangePasswordPage from "@/pages/changepasswordpage/changepassword";
-import ProfilePage from "@/pages/profile/ProfilePage";
-=======
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
 
 const guestRoutes: RouteObject[] = [
   {
@@ -30,16 +21,6 @@ const guestRoutes: RouteObject[] = [
 
 const protectedRoutes: RouteObject[] = [
   {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  element: <ProtectedRoute element={<ProfilePage />} />,
-  path: "/profile",
-},
-  {
-=======
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
     element: <ProtectedRoute element={<Home />} />,
     path: "/",
   },
@@ -55,22 +36,7 @@ const protectedRoutes: RouteObject[] = [
     element: <ProtectedRoute element={<Tickets />} />,
     path: "/bookings",
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  {
-    element: <ProtectedRoute element={<AdminPage />} />,
-    path: "/admin",
-  },
-  {
-    element: <ProtectedRoute element={<ChangePasswordPage />} />,
-    path: "/change-password",
-  },
-=======
   
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
-  
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
 ];
 
 const routes: RouteObject[] = [
