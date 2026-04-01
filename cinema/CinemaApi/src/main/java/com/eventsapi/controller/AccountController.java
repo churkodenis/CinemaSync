@@ -131,8 +131,6 @@ public class AccountController {
         }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     @PostMapping("/make-admin/{userId}")
     public ResponseEntity<Object> makeAdmin(@PathVariable String userId, Authentication auth) {
         // Тільки адмін може видавати роль адміна
@@ -153,10 +151,6 @@ public class AccountController {
 
         return ResponseEntity.ok("User promoted to ADMIN");
     }
-=======
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
 
 
     public ResponseEntity<Object> register(@Valid @RequestBody RegisterDTO registerDTO, BindingResult result) {

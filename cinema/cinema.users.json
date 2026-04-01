@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "69adcaebafbc3257d90bc3b7"
+  },
+  "username": "fknekgnek",
+  "email": "admin@gmail.com",
+  "password": "$2a$10$PKavuCZq9xdPzmrseySg1.OMWZiupLCBMEJIruS9iZSqRB6DZJeSa",
+  "roles": [
+    "USER"
+  ],
+  "tickets": [
+    "69add0e2afbc3257d90bc3ba",
+    "69add0e9afbc3257d90bc3bb"
+  ],
+  "_class": "com.eventsapi.model.UserEntity"
+},
+{
+  "_id": {
+    "$oid": "69adcd22afbc3257d90bc3b8"
+  },
+  "username": "name",
+  "email": "name@gmail.com",
+  "password": "$2a$10$o0xXCvWuZGs58VaRNx6hQe2ncsLTSpfYVQycn4WE/zj9SKLUuHpey",
+  "roles": [
+    "USER"
+  ],
+  "_class": "com.eventsapi.model.UserEntity"
+}]
