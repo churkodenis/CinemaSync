@@ -26,6 +26,10 @@ export default function UserMenu() {
 
   useEffect(() => {
     if (isDark) {
+<<<<<<< HEAD
+      document.documentElement.classList.add("dark");
+=======
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");

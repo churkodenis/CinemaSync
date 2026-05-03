@@ -16,7 +16,11 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { useGetFilmByIdQuery } from "@/store/api/filmsApi";
+<<<<<<< HEAD
+import { useBookTicketMutation, useCancelTicketMutation } from "@/store/api/userApi";
+=======
 import { useBookTicketMutation} from "@/store/api/userApi";
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
 import { useGetProfileQuery } from "@/store/api/userApi";
 import { useToast } from "@/hooks/use-toast";
 
@@ -33,7 +37,11 @@ export default function FilmPage() {
   const { data: profile, refetch: refetchProfile } = useGetProfileQuery();
 
   const [bookTicket, { isLoading: isBooking }] = useBookTicketMutation();
+<<<<<<< HEAD
+  const [cancelTicket, { isLoading: isCancelling }] = useCancelTicketMutation();
+=======
 
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
 
   if (isFilmLoading) {
     return <div className="p-10 text-center text-muted-foreground animate-pulse">Завантаження...</div>;
@@ -55,6 +63,18 @@ export default function FilmPage() {
     }
   };
 
+<<<<<<< HEAD
+  const handleCancel = async () => {
+    try {
+      await cancelTicket(id as string).unwrap();
+      toast({ title: "Успіх", description: "Бронювання скасовано", variant: "default" });
+      refetchProfile();
+    } catch (error) {
+      toast({ title: "Помилка", description: "Не вдалося скасувати", variant: "destructive" });
+    }
+  };
+=======
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -137,6 +157,20 @@ export default function FilmPage() {
             </p>
           </div>
 
+<<<<<<< HEAD
+          <Button
+            className="mt-auto w-full py-7 text-lg font-bold"
+            size="lg"
+            onClick={isAlreadyBooked ? handleCancel : handleBook}
+            disabled={places === 0 || isBooking || isCancelling}
+            variant={isAlreadyBooked ? "destructive" : "default"}
+          >
+            {isAlreadyBooked
+              ? isCancelling ? "Скасування..." : "Відмінити бронювання"
+              : isBooking ? "Бронювання..." : places > 0 ? "Забронювати квиток" : "Місць немає"}
+          </Button>
+=======
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
         </div>
       </div>
     </div>

@@ -11,12 +11,16 @@ export default function Header() {
   const location = useLocation();
   const { user } = useUserDetailsSelector();
 <<<<<<< HEAD
+  const isAdmin = (user as any)?.user?.roles?.includes("ADMIN");
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   const isAdmin = (user as any)?.user?.roles?.includes("ADMIN");
 =======
 >>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
 =======
 >>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
 
   if (authRoutes.includes(location.pathname)) {
     return null;
@@ -62,7 +66,10 @@ export default function Header() {
               Мої квитки
             </Link>
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
             {isAdmin && (
               <Link
                 to="/admin"
@@ -71,10 +78,13 @@ export default function Header() {
                 Адмін
               </Link>
             )}
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
 =======
 >>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
+>>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
           </nav>
 
           <div className="h-8 w-[1px] bg-border hidden sm:block" />
