@@ -74,7 +74,7 @@ export default function ProfilePage() {
                 <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
                   <Ticket className="w-5 h-5 text-slate-500" />
                   <div>
-                    <p className="text-xs text-muted-foreground">Заброньовано квитків</p>
+                    <p className="text-xs text-muted-foreground">Заброньовано квитківв</p>
                     <p className="text-sm font-medium">{ticketsCount}</p>
                   </div>
                 </div>
