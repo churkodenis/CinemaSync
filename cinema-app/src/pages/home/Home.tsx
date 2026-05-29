@@ -12,19 +12,7 @@ export default function Home() {
   return (
     <div className="container mx-auto py-8 px-4">
       <h1 className="text-4xl font-bold mb-8 text-center dark:text-white">
-<<<<<<< HEAD
         Афіша фільмів
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Афіша фільмів
-=======
-        Афіша фільмівв
->>>>>>> 920c5f6ebefdcfb1274a234f5ea99bfa9746d5a3
-=======
-        Афіша фільмівв
->>>>>>> e34e72f91523afd032276db66ccd3c28d4cb8d01
->>>>>>> d979d73eb7ce62173e997dcdece9eb8836c8312d
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
